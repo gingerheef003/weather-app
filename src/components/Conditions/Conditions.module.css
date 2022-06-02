@@ -22,3 +22,47 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+.card_wrapper{
+  width: 270px; 
+  height: 200px;
+  box-shadow: 0px 3px 50px #A5A5A5;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-bottom-right-radius: 40px;
+}
+
+.temp_band{
+  width: 100%;
+  height: 5%;
+}
+
+.card_data{
+  width: 100%;
+  height: 98%;
+  padding: 10px 10px;
+  display : flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.date{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 150px;
+  min-height: 30px;
+  padding: 3px 7px;
+  text-align: center;
+}
+
+
+.later_wrapper {
+  display: flex;
+  flex-direction: row;
+}

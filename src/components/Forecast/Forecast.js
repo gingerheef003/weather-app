@@ -26,7 +26,6 @@ const Forecast = () => {
         fetch(`https://community-open-weather-map.p.rapidapi.com/forecast?q=${uriEncodedCity}&rapidapi-key=1f801c3222msh64f9fe6a43ed718p1cf750jsnd05a4ad3925f`)
             .then(response => response.json())
             .then(response => {
-                console.log(response)
                 if (response.cod !== '200') {
                     throw new Error()
                 }
@@ -42,7 +41,7 @@ const Forecast = () => {
     }
     return (
         <div>
-            <h2>Find Current Weather Conditions</h2>
+            <h1>Find Current Weather Conditions</h1>
 
             <form onSubmit={getForecast}>
                 <input
